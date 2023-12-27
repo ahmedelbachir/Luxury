@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/luxuryaz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&family=Readex+Pro&family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Votre Panier</title>
+  </head>
+  <body>
+    <header class="main-header pt-3 pb-3 w-100 fixed-top shadow">
+      <div class="container d-flex gap-2 gap-sm-4 align-items-center">
+        <div class="burger-menu position-relative">
+          <a class="d-flex align-items-center ps-2 pe-2">
+            <i class="fa-solid fa-bars fs-3"></i>
+          </a>
+          <div class="list-menu position-absolute rounded-2 d-none">
+            <div class="list position-relative">
+              <a href="#" class="list-group-item p-3" data-categ=".parfums"
+                ><i class="fa-solid fa-spray-can-sparkles me-2"></i>Parfums</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".makeup"
+                ><i class="fa-solid fa-chess-bishop me-2"></i>Maquillage</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".care"
+                ><i class="fa-solid fa-eye-dropper me-2"></i>Soin personnel</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".health"
+                ><i class="fa-solid fa-weight-scale me-2"></i>Santé & Soin</a
+              >
+            </div>
+            <div class="details position-relative">
+              <div class="border-start p-2 parfums visually-hidden">
+                <p class="p-1 m-0">Parfums Femme</p>
+                <p class="p-1 m-0">Parfums Homme</p>
+                <p class="p-1 m-0">Deodorants</p>
+              </div>
+              <div class="border-start p-2 makeup visually-hidden">
+                <p class="p-1 m-0">Démaquillants</p>
+                <p class="p-1 m-0">Maquillage visage</p>
+                <p class="p-1 m-0">Maquillage yeux</p>
+                <p class="p-1 m-0">Maquillage lèvres</p>
+                <p class="p-1 m-0">Vernis à ongles</p>
+              </div>
+              <div class="border-start p-2 care visually-hidden">
+                <p class="p-1 m-0">Epilation femme</p>
+                <p class="p-1 m-0">Rasage Homme</p>
+                <p class="p-1 m-0">Soins du visage</p>
+                <p class="p-1 m-0">Soins de la peau</p>
+                <p class="p-1 m-0">Soins des cheveux</p>
+                <p class="p-1 m-0">Soins bucco-dentaire</p>
+              </div>
+              <div class="border-start p-2 health visually-hidden">
+                <p class="p-1 m-0">Equipement médicale</p>
+                <p class="p-1 m-0">Hygiène féminine</p>
+                <p class="p-1 m-0">Massage & Relaxation</p>
+                <p class="p-1 m-0">Soin des pieds</p>
+                <p class="p-1 m-0">Traitements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="IMG/luxury_az_logo.png"
+              alt="Luxury_AZ"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="search position-relative">
+          <a href="#"
+            ><i
+              class="fa-solid fa-magnifying-glass position-absolute top-50 border-end translate-middle-y"
+            ></i
+          ></a>
+          <input
+            type="search"
+            name="search"
+            id="global-search"
+            placeholder="Chercher un produit, une marque ou une catégorie"
+            class="w-100 border rounded-2 h-100 ps-4 ps-sm-5 pb-1 pt-1 pe-1 pe-sm-2"
+          />
+        </div>
+        <div class="icons d-flex gap-sm-2">
+          <div class="sign-in position-relative">
+            <a href="#" class="p-2">
+              <i class="fa-solid fa-user fs-5"></i>
+            </a>
+            <div
+              class="position-absolute text-center p-2 translate-middle-x rounded-2"
+            >
+              <a
+                href="#"
+                class="d-block btn border p-1 pe-3 ps-3 mb-2 fw-semibold text-uppercase w-100"
+                >Se Connecter</a
+              >
+              <a
+                href="#"
+                class="my-acount d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-user"></i>
+                <p class="m-0">Mon compte</p>
+              </a>
+              <a
+                href="#"
+                class="my-orders d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-box"></i>
+                <p class="m-0">Mes commandes</p>
+              </a>
+              <a
+                href="#"
+                class="my-wish d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-heart"></i>
+                <p class="m-0">Ma liste d'envies</p>
+              </a>
+            </div>
+          </div>
+          <div class="cart position-relative">
+            <a href="cart.html" class="p-2">
+              <i class="fa-solid fa-basket-shopping fs-5"></i>
+            </a>
+            <span
+              class="position-absolute bg-danger rounded-pill start-100 translate-middle top-0 badge d-none"
+              >0</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div style="height: 70px"></div>
+    <div class="panier">
+      <div class="section container text-center pt-4 pb-4">
+        <div class="no-product mb-4"><img src="IMG/panier_vide.png" alt="" /></div>
+        <h3>Votre panier est vide!</h3>
+        <p>Parcourez nos catégories et découvrez nos meilleures offres!</p>
+        <a href="index.html" class="btn">Commencez vos achats</a>
+      </div>
+    </div>
+    <div
+      class="best-offers offers container section"
+      data-category="tous"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">Meilleurs Offres</div>
+    </div>
+    <footer class="footer text-white">
+      <div class="top bg-black p-3">
+        <div
+          class="container d-flex gap-2 justify-content-between align-items-center"
+        >
+          <div class="logo">
+            <img
+              src="IMG/footer_logo.png"
+              alt="Luxury-AZ"
+              style="width: 80px"
+            />
+          </div>
+          <div class="application d-flex gap-2 flex-column">
+            <div class="text d-flex gap-2">
+              <div class="mini-logo p-1">
+                <img src="IMG/mini.png" alt="" style="width: 35px" />
+              </div>
+              <div class="txt">
+                <h6 class="m-0">LUXURY AZ DANS VOTRE POCHE!</h6>
+                <p class="m-0 fs-6 fw-light">
+                  Téléchargez notre application gratuite
+                </p>
+              </div>
+            </div>
+            <div class="apps d-flex gap-2">
+              <a href="#" class="google-store rounded-2 p-2 w-50">
+                <i class="fa-brands fa-google-play fa-xl pe-2"></i
+                ><span style="font-family: 'Readex Pro'">G</span
+                ><span style="font-family: 'Josefin Sans'">oogle Play</span>
+              </a>
+              <a href="#" class="app-store rounded-2 p-2 w-50">
+                <i class="fa-brands fa-apple fa-xl pe-2"></i
+                ><span style="font-family: 'Josefin Sans'">App Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content bg-dark pt-3">
+        <div class="container">
+          <div class="d-flex justify-content-between gap-2 mb-3">
+            <div class="contact d-flex flex-column gap-5">
+              <div class="cont d-flex flex-column gap-2">
+                <h4 class="m-0">Contacte</h4>
+                <a href="#" class="mail d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p class="m-0">luxury.az.store@gmail.com</p>
+                </a>
+                <a href="#" class="phone d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-phone"></i>
+                  <p class="m-0">06 66 03 89 30</p>
+                </a>
+              </div>
+              <div class="social">
+                <h4 class="mb-2">Suivez-nous</h4>
+                <div class="d-flex gap-3">
+                  <a href="#" class="p-2"
+                    ><i class="fa-brands fa-facebook-f fa-xl"></i
+                  ></a>
+                  <a href="#" class="p-2"
+                    ><i class="fa-brands fa-instagram fa-xl"></i
+                  ></a>
+                  <a href="#" class="p-2"
+                    ><i class="fa-brands fa-tiktok fa-xl"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="icon">
+                <h4 class="mb-3">Modes de paiement</h4>
+                <a href="#" class="p-2"
+                  ><i class="fa-solid fa-hand-holding-dollar fa-xl"></i
+                ></a>
+              </div>
+            </div>
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.4818825946998!2d-0.6429603697123604!3d35.18853747092895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7f013c084847f5%3A0x382bd55aef796e0f!2sluxury%20AZ!5e0!3m2!1sfr!2sdz!4v1699997942490!5m2!1sfr!2sdz"
+                width="600"
+                height="450"
+                class="rounded-4"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-brands">
+            <h6 class="mb-2">Meilleures Marques</h6>
+            <div class="marques row">
+              <a href="#" class="col-2 m-0 fw-light">Nivea</a>
+              <a href="#" class="col-2 m-0 fw-light">Dove</a>
+              <a href="#" class="col-2 m-0 fw-light">L'Oréal</a>
+              <a href="#" class="col-2 m-0 fw-light">Garnier</a>
+              <a href="#" class="col-2 m-0 fw-light">Sonashi</a>
+              <a href="#" class="col-2 m-0 fw-light">Essence</a>
+              <a href="#" class="col-2 m-0 fw-light">Maybelline</a>
+              <a href="#" class="col-2 m-0 fw-light">Johnson's</a>
+              <a href="#" class="col-2 m-0 fw-light">Sephora</a>
+              <a href="#" class="col-2 m-0 fw-light">Note</a>
+              <a href="#" class="col-2 m-0 fw-light">Pastel</a>
+              <a href="#" class="col-2 m-0 fw-light">Zara</a>
+              <a href="#" class="col-2 m-0 fw-light">Le petit marseillais</a>
+              <a href="#" class="col-2 m-0 fw-light">Kiko</a>
+              <a href="#" class="col-2 m-0 fw-light">Neutrogena</a>
+            </div>
+          </div>
+        </div>
+        <div class="copy p-2 mt-3 text-center text-black bg-dark-subtle">
+          &copy; Luxury_AZ 2023
+        </div>
+      </div>
+    </footer>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background-color: #f5f5dc;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* End Global Rules */
+/* Start component */
+.section {
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 66, 37, 0.075);
+}
+.section .title {
+  background-color: #ffcf9d;
+  padding: 8px 8px 8px 16px;
+}
+.section .sec-body {
+  padding: 10px 14px 14px;
+}
+
+.card {
+  position: relative;
+  transition: 0.2s;
+}
+.card:hover {
+  scale: 1.015;
+}
+.card .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .remise-percent {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.card .fav {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center center;
+  background-color: #f5f5dc;
+  border-radius: 5px;
+  color: #004225;
+  font-size: 1.1rem;
+}
+.card .add-to-cart {
+  position: absolute;
+  bottom: 90px;
+  left: 8px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center center;
+  background-color: #f5f5dc;
+  border-radius: 5px;
+  color: #004225;
+  font-size: 1.1rem;
+}
+.card .add-to-cart svg {
+  transition: 0.1s;
+  opacity: 0.3;
+}
+.card .add-to-cart svg:hover {
+  opacity: 1;
+}
+
+.remise-percent {
+  padding: 5px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: #f5f5dc;
+  color: #004225;
+  border-radius: 5px;
+}
+
+.offers .card:hover {
+  box-shadow: 0 0.125rem 0.5rem rgba(255, 176, 0, 0.375);
+}
+
+/* End component */
+/* Start Header */
+.main-header {
+  color: #f5f5dc;
+  background-color: #004225;
+}
+.main-header .burger-menu > a {
+  height: 35px;
+}
+.main-header .burger-menu .list-menu {
+  top: 35px;
+  left: -5px;
+  background-color: #f5f5dc;
+  color: #004225;
+}
+.main-header .burger-menu .list-menu .list {
+  width: 170px;
+}
+.main-header .burger-menu .list-menu .list a {
+  font-weight: 500;
+  line-height: 16px;
+}
+.main-header .burger-menu .list-menu .list a svg {
+  width: 20px;
+}
+.main-header .burger-menu .list-menu .list::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border: 5px solid;
+  border-color: transparent transparent #f5f5dc;
+}
+.main-header .burger-menu .list-menu .details div {
+  width: 250px;
+  height: 100%;
+}
+.main-header .burger-menu .list-menu .details div p {
+  padding-left: 15px !important;
+  font-size: 14px;
+  transition: font-weight 0.3s;
+}
+.main-header .burger-menu .list-menu .details div p:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+.main-header .logo {
+  max-width: 35px;
+  min-width: 35px;
+}
+.main-header .search {
+  flex-grow: 2;
+}
+.main-header .search svg {
+  color: #004225;
+  padding: 3px 9px;
+}
+@media (max-width: 575px) {
+  .main-header .search svg {
+    padding: 3px 4px;
+    font-size: 12px;
+  }
+}
+.main-header .icons .sign-in > div {
+  display: none;
+  background-color: #f5f5dc;
+  width: 160px;
+}
+.main-header .icons .sign-in > div .btn {
+  line-height: 22px;
+  background-color: #ffb000;
+  color: #f5f5dc;
+  font-size: 13px;
+}
+.main-header .icons .sign-in > div .btn::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  top: 46px;
+  left: 0;
+  position: absolute;
+}
+.main-header .icons .sign-in > div .my-acount,
+.main-header .icons .sign-in > div .my-orders,
+.main-header .icons .sign-in > div .my-wish {
+  font-size: 14px;
+  color: #004225;
+}
+.main-header .icons .sign-in > div .my-acount:hover,
+.main-header .icons .sign-in > div .my-orders:hover,
+.main-header .icons .sign-in > div .my-wish:hover {
+  background-color: #ffcf9d;
+}
+.main-header .icons .sign-in:hover > div {
+  display: block;
+}
+.main-header .icons .cart span {
+  padding: 3px 4px;
+  margin-left: -4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.main-header .icons .cart:hover {
+  color: #ffb000;
+  cursor: pointer;
+}
+.main-header a {
+  transition: 0.2s;
+}
+.main-header a:hover {
+  color: #ffb000;
+}
+
+/* End Header */
+/* Start Sub-categories */
+.sub-categ .card {
+  min-width: 92px;
+}
+.sub-categ .card:hover {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+.sub-categ .card h6 {
+  font-size: 0.8rem;
+}
+@media (max-width: 576px) {
+  .sub-categ .card h6 {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .sub-categ .card h6 {
+    font-size: 0.6rem;
+  }
+}
+
+/* End Sub-caregories */
+/* Start Filtering */
+.categories ul {
+  padding-left: 25px;
+}
+.categories ul li {
+  list-style: none;
+}
+.categories ul li span svg {
+  vertical-align: sub;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  padding: 4px;
+  cursor: pointer;
+  font-size: small;
+}
+.categories ul li span svg:hover {
+  opacity: 0.6;
+}
+.categories ul ul {
+  display: none;
+}
+.categories a {
+  display: inline-block;
+  height: 30px;
+}
+.categories a.active {
+  font-weight: 700;
+}
+.categories a.active:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+.categories a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.brands-container {
+  min-height: 162px;
+  max-height: 162px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffae00 #fff0e0;
+}
+.brands-container::-webkit-scrollbar {
+  width: 5px;
+}
+.brands-container:hover::-webkit-scrollbar {
+  width: 7px;
+}
+.brands-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 174, 0, 0.5019607843);
+  border-radius: 5px;
+}
+.brands-container:hover::-webkit-scrollbar-thumb {
+  background-color: #ffae00;
+}
+.brands-container::-webkit-scrollbar-track {
+  background-color: #fff0e0;
+  border-radius: 5px;
+}
+.brands-container > div input,
+.brands-container > div label {
+  cursor: pointer;
+}
+
+/* End Filtering */
+/* Start Footer */
+.footer .apps a {
+  border: 1px solid white;
+}
+.footer .apps a:hover {
+  border-color: #ffb000;
+  color: #ffb000;
+}
+.footer .social a:hover,
+.footer .icon a:hover {
+  color: #ffb000;
+}
+
+/* End Footer */
+/* Start Cart */
+.panier .no-product img {
+  width: 270px;
+}
+.panier .product img {
+  width: 120px;
+}
+.panier .btn {
+  line-height: 22px;
+  background-color: #ffb000;
+  color: #f5f5dc;
+  font-size: 13px;
+}
+
+/* End Cart *//*# sourceMappingURL=luxuryaz.css.map */

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/luxuryaz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&family=Readex+Pro&family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Luxury AZ</title>
+  </head>
+  <body>
+    <header class="main-header pt-3 pb-3 w-100 fixed-top shadow">
+      <div class="container d-flex gap-2 gap-sm-4 align-items-center">
+        <div class="burger-menu position-relative">
+          <a class="d-flex align-items-center ps-2 pe-2">
+            <i class="fa-solid fa-bars fs-3"></i>
+          </a>
+          <div class="list-menu position-absolute rounded-2 d-none shadow">
+            <div class="list position-relative">
+              <a href="#" class="list-group-item p-3" data-categ=".parfums"
+                ><i class="fa-solid fa-spray-can-sparkles me-2"></i>Parfums</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".makeup"
+                ><i class="fa-solid fa-chess-bishop me-2"></i>Maquillage</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".care"
+                ><i class="fa-solid fa-eye-dropper me-2"></i>Soin personnel</a
+              >
+              <a href="#" class="list-group-item p-3" data-categ=".health"
+                ><i class="fa-solid fa-weight-scale me-2"></i>Santé & Soin</a
+              >
+            </div>
+            <div class="details position-relative">
+              <div class="border-start p-2 parfums visually-hidden">
+                <p class="p-1 m-0">Parfums Femme</p>
+                <p class="p-1 m-0">Parfums Homme</p>
+                <p class="p-1 m-0">Deodorants</p>
+              </div>
+              <div class="border-start p-2 makeup visually-hidden">
+                <p class="p-1 m-0">Démaquillants</p>
+                <p class="p-1 m-0">Maquillage visage</p>
+                <p class="p-1 m-0">Maquillage yeux</p>
+                <p class="p-1 m-0">Maquillage lèvres</p>
+                <p class="p-1 m-0">Vernis à ongles</p>
+              </div>
+              <div class="border-start p-2 care visually-hidden">
+                <p class="p-1 m-0">Epilation femme</p>
+                <p class="p-1 m-0">Rasage Homme</p>
+                <p class="p-1 m-0">Soins du visage</p>
+                <p class="p-1 m-0">Soins de la peau</p>
+                <p class="p-1 m-0">Soins des cheveux</p>
+                <p class="p-1 m-0">Soins bucco-dentaire</p>
+              </div>
+              <div class="border-start p-2 health visually-hidden">
+                <p class="p-1 m-0">Equipement médicale</p>
+                <p class="p-1 m-0">Hygiène féminine</p>
+                <p class="p-1 m-0">Massage & Relaxation</p>
+                <p class="p-1 m-0">Soin des pieds</p>
+                <p class="p-1 m-0">Traitements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="IMG/luxury_az_logo.png"
+              alt="Luxury_AZ"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="search position-relative">
+          <a href="#"
+            ><i
+              class="fa-solid fa-magnifying-glass position-absolute top-50 border-end translate-middle-y"
+            ></i
+          ></a>
+          <input
+            type="search"
+            name="search"
+            id="global-search"
+            placeholder="Chercher un produit, une marque ou une catégorie"
+            class="w-100 border rounded-2 h-100 ps-4 ps-sm-5 pb-1 pt-1 pe-1 pe-sm-2"
+          />
+        </div>
+        <div class="icons d-flex gap-sm-2">
+          <div class="sign-in position-relative">
+            <a href="#" class="p-2">
+              <i class="fa-solid fa-user fs-5"></i>
+            </a>
+            <div
+              class="position-absolute text-center p-2 translate-middle-x rounded-2"
+            >
+              <a
+                href="#"
+                class="d-block btn border p-1 pe-3 ps-3 mb-2 fw-semibold text-uppercase w-100"
+                >Se Connecter</a
+              >
+              <a
+                href="#"
+                class="my-acount d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-user"></i>
+                <p class="m-0">Mon compte</p>
+              </a>
+              <a
+                href="#"
+                class="my-orders d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-box"></i>
+                <p class="m-0">Mes commandes</p>
+              </a>
+              <a
+                href="#"
+                class="my-wish d-flex align-items-center gap-2 p-1 rounded-1"
+              >
+                <i class="fa-solid fa-heart"></i>
+                <p class="m-0">Ma liste d'envies</p>
+              </a>
+            </div>
+          </div>
+          <div class="cart position-relative">
+            <a href="cart.html" class="p-2">
+              <i class="fa-solid fa-basket-shopping fs-5"></i>
+            </a>
+            <span
+              class="position-absolute bg-danger rounded-pill start-100 translate-middle top-0 badge d-none"
+              >0</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div style="height: 70px"></div>
+    <div class="sub-categ section container">
+      <div class="sec-body row row-gap-2">
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/parfum_h.png"
+              class="card-img-top"
+              alt="Parfums Homme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Parfum Homme</h6>
+          </a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/parfum_f.png"
+              class="card-img-top"
+              alt="Parfums Femme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Parfum Femme</h6>
+          </a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/makeup_sub.png"
+              class="card-img-top"
+              alt="Parfums Homme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Maquillage</h6>
+          </a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/soin_ch.png"
+              class="card-img-top"
+              alt="Parfums Homme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Soin des cheveux</h6>
+          </a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/soin_vis.png"
+              class="card-img-top"
+              alt="Parfums Homme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Soin de visage</h6>
+          </a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="#" class="shadow-sm card h-100">
+            <img
+              src="IMG/epilation.png"
+              class="card-img-top"
+              alt="Parfums Homme"
+            />
+            <h6 class="text-center fw-bold p-2 m-0">Epilation & Rasage</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="category section container">
+      <div class="sec-body row row-gap-3">
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/parfum.jpg" class="card-img" alt="Parfums" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/makeup.jpg" class="card-img" alt="Maquillage" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img
+              src="IMG/self_care.jpg"
+              class="card-img"
+              alt="Soin Personnel"
+            />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/health.jpg" class="card-img" alt="Santé & Soin" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="best-offers offers container section"
+      data-category="tous"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">Meilleurs Offres</div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row">
+        <div class="col-12">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/parfume-2.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row">
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/parfum_homme.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/parfum_femme.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="parfums_femme"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Parfums Femme
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="parfums_homme"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Parfums Homme
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div class="section container">
+      <h4 class="fw-semibold text-center p-3 m-0">Marques Parfums</h4>
+      <div class="sec-body row row-gap-2 justify-content-center">
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/azzaro.jpg"
+              class="card-img rounded-4"
+              alt="Parfums Homme"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/zara.jpg" class="card-img rounded-4" alt="zara" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/davidoff.jpg"
+              class="card-img rounded-4"
+              alt="Davidoff"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/ck.jpg"
+              class="card-img rounded-4"
+              alt="Calvin Klein"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/boss.jpg"
+              class="card-img rounded-4"
+              alt="Hugo Boss"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/dg.jpg"
+              class="card-img rounded-4"
+              alt="Dolce & Gabbana"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row">
+        <div class="col-12">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/makeup-2.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row row-gap-3">
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/eye_makeup.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/lips_makeup.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/blush.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/brushes.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="maquillage_des_levres"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Maquillage des lèvres
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="maquillage_des_yeux"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Maquillage des yeux
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div class="container section">
+      <h4 class="fw-semibold text-center p-3 m-0">Marques Maquillage</h4>
+      <div class="sec-body row row-gap-2 justify-content-center">
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/vichy.jpg" class="card-img rounded-4" alt="Vichy" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/pb.jpg" class="card-img rounded-4" alt="pb" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/maybelline.jpg"
+              class="card-img rounded-4"
+              alt="Maybelline"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/piove.jpg" class="card-img rounded-4" alt="Piové" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/loreal.jpg"
+              class="card-img rounded-4"
+              alt="L'Oréal Paris"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/bourjois2.jpg"
+              class="card-img rounded-4"
+              alt="essence"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row">
+        <div class="col-12">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/self_care-2.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row row-gap-3">
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/skincare.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/hair_care.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/hair_removal.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/massage.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="soins_de_la_peau"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Soin de la peau
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="soins_des_cheveux"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Soin des cheveux
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div class="container section">
+      <h4 class="fw-semibold text-center p-3 m-0">Marques Soin personnel</h4>
+      <div class="sec-body row row-gap-2 justify-content-center">
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/yves_rocher.jpg"
+              class="card-img rounded-4"
+              alt="Vichy"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/nivea.jpg" class="card-img rounded-4" alt="pb" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/mac.jpg"
+              class="card-img rounded-4"
+              alt="Maybelline"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/garnier.jpg" class="card-img rounded-4" alt="Piové" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/braune.jpg"
+              class="card-img rounded-4"
+              alt="L'Oréal Paris"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/dove.jpg" class="card-img rounded-4" alt="essence" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row">
+        <div class="col-12">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/health-2.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="sec-body row row-gap-3">
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/teeth_care.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="#" class="card border-0 shadow-sm">
+            <img src="IMG/hygiene2.jpg" class="card-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="soins_bucco-dentaire"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Soin bucco-dentaire
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div
+      class="offers container section"
+      data-category="hygiene_&_soin"
+      data-count="6"
+    >
+      <div class="title fs-5 fw-bold">
+        Hygiène & Soin
+        <a href="#" class="more float-end fs-6 p-1 fw-bold">Voir Plus &gt;</a>
+      </div>
+    </div>
+    <div class="container section">
+      <h4 class="fw-semibold text-center p-3 m-0">Marques Santé & Soin</h4>
+      <div class="sec-body row row-gap-2 justify-content-center">
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/beurer.jpg" class="card-img rounded-4" alt="Vichy" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/nivea.jpg" class="card-img rounded-4" alt="pb" />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img
+              src="IMG/uriage.jpg"
+              class="card-img rounded-4"
+              alt="Maybelline"
+            />
+          </a>
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="shadow-sm card border-0">
+            <img src="IMG/eucerin.jpg" class="card-img rounded-4" alt="Piové" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container p-0">
+      <div class="row align-items-start gap-3 m-0">
+        <div class="section col-3">
+          <div class="filtering sec-body">
+            <h5 class="title rounded-2">Catégories</h5>
+            <div class="categories">
+              <a href="#" class="active">Beauté & Parfums</a>
+              <ul>
+                <li>
+                  <span><a href="#">Parfum</a></span>
+                  <ul>
+                    <li>
+                      <span><a href="#">Aromathérapie</a></span>
+                      <ul>
+                        <li><a href="#">Diffuseurs</a></li>
+                        <li>
+                          <a href="#">Huiles naturelles & essentielles</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Parfums enfants</a></li>
+                    <li><a href="#">Parfums solides</a></li>
+                    <li>
+                      <span><a href="#">Parfums homme</a></span>
+                      <ul>
+                        <li><a href="#">Spray pour le corps</a></li>
+                        <li><a href="#">Eau de cologne</a></li>
+                        <li><a href="#">Eau de Parfum</a></li>
+                        <li><a href="#">Eau de toilette</a></li>
+                        <li><a href="#">Eau fraiche</a></li>
+                        <li><a href="#">Coffrets de parfums</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span><a href="#">Parfums femme</a></span>
+                      <ul>
+                        <li><a href="#">Brumes</a></li>
+                        <li><a href="#">Eau de cologne</a></li>
+                        <li><a href="#">Eau de Parfum</a></li>
+                        <li><a href="#">Eau de toilette</a></li>
+                        <li><a href="#">Coffrets de parfums</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span><a href="#">Maquillage</a></span>
+                  <ul>
+                    <li>
+                      <span><a href="#">Aromathérapie</a></span>
+                      <ul>
+                        <li><a href="#">Diffuseurs</a></li>
+                        <li>
+                          <a href="#">Huiles naturelles & essentielles</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Parfums enfants</a></li>
+                    <li><a href="#">Parfums solides</a></li>
+                    <li>
+                      <span><a href="#">Parfums homme</a></span>
+                      <ul>
+                        <li><a href="#">Spray pour le corps</a></li>
+                        <li><a href="#">Eau de cologne</a></li>
+                        <li><a href="#">Eau de Parfum</a></li>
+                        <li><a href="#">Eau de toilette</a></li>
+                        <li><a href="#">Eau fraiche</a></li>
+                        <li><a href="#">Coffrets de parfums</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span><a href="#">Parfums femme</a></span>
+                      <ul>
+                        <li><a href="#">Brumes</a></li>
+                        <li><a href="#">Eau de cologne</a></li>
+                        <li><a href="#">Eau de Parfum</a></li>
+                        <li><a href="#">Eau de toilette</a></li>
+                        <li><a href="#">Coffrets de parfums</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span><a href="#">Soins des cheveux</a></span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>
+                  <span><a href="#">Soin personnel</a></span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </li>
+                <li>
+                  <span><a href="#">Soins de la peau</a></span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <h5 class="title rounded-2">Marques</h5>
+            <div class="filtering-brands">
+              <div class="search-bar position-relative mb-2">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-magnifying-glass position-absolute top-50 border-end translate-middle-y ps-2 pe-2"
+                  ></i
+                ></a>
+                <input
+                  type="search"
+                  name="search"
+                  id="find"
+                  placeholder="Chercher"
+                  class="w-100 border rounded-pill h-100 ps-3 ps-sm-5 pb-1 pt-1 pe-1 pe-sm-2"
+                />
+              </div>
+              <div class="brands-container ps-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section col">
+          <div class="sec-body">
+            <div class="title rounded-2">
+              <h5 class="m-0">Tous</h5>
+            </div>
+            <div class="offers" data-category="tous" data-count="all"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-white">
+      <div class="top bg-black p-3">
+        <div class="container d-flex gap-2 justify-content-between align-items-center">
+          <div class="logo">
+            <img
+              src="IMG/footer_logo.png"
+              alt="Luxury-AZ"
+              style="width: 80px"
+            />
+          </div>
+          <div class="application d-flex gap-2 flex-column">
+            <div class="text d-flex gap-2">
+              <div class="mini-logo p-1">
+                <img src="IMG/mini.png" alt="" style="width: 35px" />
+              </div>
+              <div class="txt">
+                <h6 class="m-0">LUXURY AZ DANS VOTRE POCHE!</h6>
+                <p class="m-0 fs-6 fw-light">
+                  Téléchargez notre application gratuite
+                </p>
+              </div>
+            </div>
+            <div class="apps d-flex gap-2">
+              <a href="#" class="google-store rounded-2 p-2 w-50">
+                <i class="fa-brands fa-google-play fa-xl pe-2"></i
+                ><span style="font-family: 'Readex Pro'">G</span
+                ><span style="font-family: 'Josefin Sans'">oogle Play</span>
+              </a>
+              <a href="#" class="app-store rounded-2 p-2 w-50">
+                <i class="fa-brands fa-apple fa-xl pe-2"></i
+                ><span style="font-family: 'Josefin Sans'">App Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content bg-dark pt-3">
+        <div class="container">
+          <div class="d-flex justify-content-between gap-2 mb-3">
+            <div
+              class="contact d-flex flex-column gap-5"
+            >
+              <div class="cont d-flex flex-column gap-2">
+                <h4 class="m-0">Contacte</h4>
+                <a href="#" class="mail d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p class="m-0">luxury.az.store@gmail.com</p>
+                </a>
+                <a href="#" class="phone d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-phone"></i>
+                  <p class="m-0">06 66 03 89 30</p>
+                </a>
+              </div>
+              <div class="social">
+                <h4 class="mb-2">Suivez-nous</h4>
+                <div class="d-flex gap-3">
+                  <a href="https://www.facebook.com/luxury.az.store" target="_blank" class="p-2"
+                    ><i class="fa-brands fa-facebook-f fa-xl"></i
+                  ></a>
+                  <a href="https://www.instagram.com/luxury.az.store/" target="_blank" class="p-2"
+                    ><i class="fa-brands fa-instagram fa-xl"></i
+                  ></a>
+                  <a href="https://www.tiktok.com/@luxury.az.store" target="_blank" class="p-2"
+                    ><i class="fa-brands fa-tiktok fa-xl"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="icon">
+                <h4 class="mb-3">Modes de paiement</h4>
+                <a href="#" class="p-2"
+                  ><i class="fa-solid fa-hand-holding-dollar fa-xl"></i
+                ></a>
+              </div>
+            </div>
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.4818825946998!2d-0.6429603697123604!3d35.18853747092895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7f013c084847f5%3A0x382bd55aef796e0f!2sluxury%20AZ!5e0!3m2!1sfr!2sdz!4v1699997942490!5m2!1sfr!2sdz"
+                width="600"
+                height="450"
+                class="rounded-4"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-brands">
+            <h6 class="mb-2">Meilleures Marques</h6>
+            <div class="marques row">
+              <a href="#" class="col-2 m-0 fw-light">Nivea</a>
+              <a href="#" class="col-2 m-0 fw-light">Dove</a>
+              <a href="#" class="col-2 m-0 fw-light">L'Oréal</a>
+              <a href="#" class="col-2 m-0 fw-light">Garnier</a>
+              <a href="#" class="col-2 m-0 fw-light">Sonashi</a>
+              <a href="#" class="col-2 m-0 fw-light">Essence</a>
+              <a href="#" class="col-2 m-0 fw-light">Maybelline</a>
+              <a href="#" class="col-2 m-0 fw-light">Johnson's</a>
+              <a href="#" class="col-2 m-0 fw-light">Sephora</a>
+              <a href="#" class="col-2 m-0 fw-light">Note</a>
+              <a href="#" class="col-2 m-0 fw-light">Pastel</a>
+              <a href="#" class="col-2 m-0 fw-light">Zara</a>
+              <a href="#" class="col-2 m-0 fw-light">Le petit marseillais</a>
+              <a href="#" class="col-2 m-0 fw-light">Kiko</a>
+              <a href="#" class="col-2 m-0 fw-light">Neutrogena</a>
+            </div>
+          </div>
+        </div>
+        <div class="copy p-2 mt-3 text-center text-black bg-dark-subtle">
+          &copy; Luxury_AZ 2023
+        </div>
+      </div>
+    </footer>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

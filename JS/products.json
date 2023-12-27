@@ -1,0 +1,471 @@
+[
+  {
+    "id": "1",
+    "brand": "Awane",
+    "title": "Awane Confort 3D",
+    "image": "../IMG/Products/awane_confort_3d.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "description": "lorem epsum",
+    "old price": "120",
+    "new price": "120"
+  },
+  {
+    "id": "2",
+    "brand": "Oral-B",
+    "title": "Brosse à dents electrique Oral_B pour enfants",
+    "image": "../IMG/Products/brosse_a_dents_bb_oralb.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "1400",
+    "new price": "1200"
+  },
+  {
+    "id": "3",
+    "brand": "Clinique",
+    "title": "Crème de jour Clinique",
+    "image": "../IMG/Products/clinique_creme_jour.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1600",
+    "new price": "1450"
+  },
+  {
+    "id": "4",
+    "brand": "Maybelline",
+    "title": "Cryon Kajal noir Colossal Maybelline ",
+    "image": "../IMG/Products/colossal_eyeliner.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "550",
+    "new price": "450"
+  },
+  {
+    "id": "5",
+    "brand": "Diadermine",
+    "title": "Crème de jour anti-age Diadermine",
+    "image": "../IMG/Products/diadermine_creme_antiage.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1600",
+    "new price": "1400"
+  },
+  {
+    "id": "6",
+    "brand": "Elmex",
+    "title": "Bain de ouche Elmex",
+    "image": "../IMG/Products/elmex_bain_de_bouche.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "450",
+    "new price": "350"
+  },
+  {
+    "id": "7",
+    "brand": "Plom",
+    "title": "Eyeliner Plom",
+    "image": "../IMG/Products/eyeliner_plom.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "1200",
+    "new price": "1000"
+  },
+  {
+    "id": "8",
+    "brand": "Sans Marque",
+    "title": "Serum des yeux anti-cerne",
+    "image": "../IMG/Products/eyeserum_sm.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "950",
+    "new price": "800"
+  },
+  {
+    "id": "9",
+    "brand": "Sans Marque",
+    "title": "Palette fard à paupières nude",
+    "image": "../IMG/Products/eyeshadow_sm.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "1100",
+    "new price": "950"
+  },
+  {
+    "id": "10",
+    "brand": "L'Oréal",
+    "title": "Fond de teint L'Oréal Bonjour Nudista",
+    "image": "../IMG/Products/fdt_loreal.jpg",
+    "category": "tous maquillage",
+    "old price": "2600",
+    "new price": "2500"
+  },
+  {
+    "id": "11",
+    "brand": "Sans Marque",
+    "title": "Appareil soin des pieds",
+    "image": "../IMG/Products/feet_care_sm.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "old price": "1800",
+    "new price": "1700"
+  },
+  {
+    "id": "12",
+    "brand": "Himalaya",
+    "title": "Crème des pieds Himalaya",
+    "image": "../IMG/Products/feet_cream_himalaya.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "old price": "800",
+    "new price": "800"
+  },
+  {
+    "id": "13",
+    "brand": "Garnier",
+    "title": "Vitamine C Garnier pour visage",
+    "image": "../IMG/Products/garnier_vitc.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "2450",
+    "new price": "2400"
+  },
+  {
+    "id": "14",
+    "brand": "Sans Marque",
+    "title": "Gloss pour lèvres",
+    "image": "../IMG/Products/gloss_sm.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "800",
+    "new price": "750"
+  },
+  {
+    "id": "15",
+    "brand": "Venus",
+    "title": "Gloss Venus pour lèvres",
+    "image": "../IMG/Products/gloss_venus.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "800",
+    "new price": "800"
+  },
+  {
+    "id": "16",
+    "brand": "L'Oréal",
+    "title": "Gommage visage L'Oréal",
+    "image": "../IMG/Products/gommage_loreal.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1500",
+    "new price": "1400"
+  },
+  {
+    "id": "17",
+    "brand": "Nivea",
+    "title": "Lingette intime Nivea",
+    "image": "../IMG/Products/lingette_intime_nivea.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "old price": "300",
+    "new price": "300"
+  },
+  {
+    "id": "18",
+    "brand": "Ultimate",
+    "title": "Rouge é lèvres Ultimate",
+    "image": "../IMG/Products/lipstick_ultimate.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "950",
+    "new price": "800"
+  },
+  {
+    "id": "19",
+    "brand": "Sans Marque",
+    "title": "Gloss pour lèvres",
+    "image": "../IMG/Products/lipstick_sm.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "800",
+    "new price": "800"
+  },
+  {
+    "id": "20",
+    "brand": "Listerine",
+    "title": "Bain de bouche Listerine",
+    "image": "../IMG/Products/listerine_bain_de_bouche.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "1600",
+    "new price": "1550"
+  },
+  {
+    "id": "21",
+    "brand": "Essence",
+    "title": "Mascara Essence vert",
+    "image": "../IMG/Products/mascara_essence_vert.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "1100",
+    "new price": "1100"
+  },
+  {
+    "id": "22",
+    "brand": "Sans Marque",
+    "title": "Mascara waterproof",
+    "image": "../IMG/Products/mascara_sm.jpg",
+    "category": "tous maquillage maquillage_des_yeux",
+    "old price": "900",
+    "new price": "850"
+  },
+  {
+    "id": "23",
+    "brand": "Garnier",
+    "title": "Masque des cheveux Garnier Fructus banane pour cheveux trés secs",
+    "image": "../IMG/Products/masque_banane_fructus.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "1500",
+    "new price": "1450"
+  },
+  {
+    "id": "24",
+    "brand": "Maybelline",
+    "title": "Gloss Maybelline",
+    "image": "../IMG/Products/maybelline_gloss.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "1400",
+    "new price": "1400"
+  },
+  {
+    "id": "25",
+    "brand": "Maybelline",
+    "title": "Rouge é lèvres Maybelline",
+    "image": "../IMG/Products/maybelline_lipstick.jpg",
+    "category": "tous maquillage maquillage_des_levres",
+    "old price": "1400",
+    "new price": "1400"
+  },
+  {
+    "id": "26",
+    "brand": "Neutrogena",
+    "title": "Gel nettoyant Neutrogena anti-brillance vert",
+    "image": "../IMG/Products/neutrogina_gel_nett.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1200",
+    "new price": "1200"
+  },
+  {
+    "id": "27",
+    "brand": "Nivea",
+    "title": "Gel intime Nivea sensitive",
+    "image": "../IMG/Products/nivea_gel_intime.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "old price": "850",
+    "new price": "700"
+  },
+  {
+    "id": "28",
+    "brand": "Oral-B",
+    "title": "Brosse à dents Oral-B adultes",
+    "image": "../IMG/Products/oralb_brossea_dents.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "800",
+    "new price": "800"
+  },
+  {
+    "id": "29",
+    "brand": "Giorgio Armani",
+    "title": "Eau de parfum Giorgio Armani Aqua Di pour homme",
+    "image": "../IMG/Products/parf_armani.jpg",
+    "category": "tous parfums parfums_homme eau_de_parfum",
+    "old price": "4500",
+    "new price": "4200"
+  },
+  {
+    "id": "30",
+    "brand": "Bently",
+    "title": "Eau de parfum Bently Momentum Intense pour homme",
+    "image": "../IMG/Products/parf_bently.jpg",
+    "category": "tous parfums parfums_homme eau_de_parfum",
+    "old price": "4950",
+    "new price": "4800"
+  },
+  {
+    "id": "31",
+    "brand": "Chanel",
+    "title": "Eau de toilette COCO Chanel Paris Mademoiselle pour femme",
+    "image": "../IMG/Products/parf_coco_chanel.jpg",
+    "category": "tous parfums parfums_femme eau_de_toilette",
+    "old price": "5500",
+    "new price": "5000"
+  },
+  {
+    "id": "32",
+    "brand": "Forever",
+    "title": "Eau de parfum pour femme Forever MTJ",
+    "image": "../IMG/Products/parf_forever.jpg",
+    "category": "tous parfums parfums_femme eau_de_parfum",
+    "old price": "3650",
+    "new price": "3500"
+  },
+  {
+    "id": "33",
+    "brand": "Lanvin",
+    "title": "Eau de toilette Lanvin Jeanne My Sin pour femme",
+    "image": "../IMG/Products/parf_lanvin.jpg",
+    "category": "tous parfums parfums_femme eau_de_toilette",
+    "old price": "4800",
+    "new price": "4600"
+  },
+  {
+    "id": "34",
+    "brand": "Zara",
+    "title": "Eau de parfum Zara Lunar Therm pour femme",
+    "image": "../IMG/Products/parf_lunar.jpg",
+    "category": "tous parfums parfums_femme eau_de_parfum",
+    "old price": "1950",
+    "new price": "1800"
+  },
+  {
+    "id": "35",
+    "brand": "Mehran",
+    "title": "Eau de toilette Mehran Modiri pour homme",
+    "image": "../IMG/Products/parf_mehran.jpg",
+    "category": "tous parfums parfums_homme eau_de_toilette",
+    "old price": "2950",
+    "new price": "2600"
+  },
+  {
+    "id": "36",
+    "brand": "Oreed",
+    "title": "Eau de parfum Oreed pour homme",
+    "image": "../IMG/Products/parf_oreed.jpg",
+    "category": "tous parfums parfums_homme eau_de_parfum",
+    "old price": "4000",
+    "new price": "3900"
+  },
+  {
+    "id": "37",
+    "brand": "Dior",
+    "title": "Eau de toilette Dior Sauvage pour homme",
+    "image": "../IMG/Products/parf_sauvage.jpg",
+    "category": "tous parfums parfums_homme eau_de_toilette",
+    "old price": "3650",
+    "new price": "3500"
+  },
+  {
+    "id": "38",
+    "brand": "Twilly",
+    "title": "Eau de parfum Twilly d'Hermès pour femme",
+    "image": "../IMG/Products/parf_twilly.jpg",
+    "category": "tous parfums parfums_femme eau_de_parfum",
+    "old price": "4500",
+    "new price": "4500"
+  },
+  {
+    "id": "39",
+    "brand": "Valentino",
+    "title": "Eau de parfum Valentino pour homme",
+    "image": "../IMG/Products/parf_valentino.jpg",
+    "category": "tous parfums parfums_homme eau_de_parfum",
+    "old price": "2500",
+    "new price": "2500"
+  },
+  {
+    "id": "40",
+    "brand": "You",
+    "title": "Eau de parfum You pour femme",
+    "image": "../IMG/Products/parf_you.jpg",
+    "category": "tous parfums parfums_femme eau_de_parfum",
+    "old price": "3700",
+    "new price": "3500"
+  },
+  {
+    "id": "41",
+    "brand": "Peau Parfaite",
+    "title": "Gel intime Peau Parfaite soin toilette",
+    "image": "../IMG/Products/peau_parfait_gel_intime.jpg",
+    "category": "tous soin_personnel hygiene_&_soin",
+    "old price": "550",
+    "new price": "450"
+  },
+  {
+    "id": "42",
+    "brand": "Remington",
+    "title": "Lisseur céramic Remington keratin therapy",
+    "image": "../IMG/Products/remington_lisseur.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "14000",
+    "new price": "13500"
+  },
+  {
+    "id": "43",
+    "brand": "Remington",
+    "title": "Séchoir Remington",
+    "image": "../IMG/Products/sechoir_remington.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "6800",
+    "new price": "6500"
+  },
+  {
+    "id": "44",
+    "brand": "Sensodyne",
+    "title": "Dentifrice Synsodyne rapid relief",
+    "image": "../IMG/Products/sensodyne_dentifrice.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "500",
+    "new price": "500"
+  },
+  {
+    "id": "45",
+    "brand": "L'Oréal",
+    "title": "Sérum pour cheveux L'Oréal ELSEVE dream long",
+    "image": "../IMG/Products/serum_cheveux_loreal.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "1950",
+    "new price": "1750"
+  },
+  {
+    "id": "46",
+    "brand": "The Ordinary",
+    "title": "The Ordinary serum pour visage alpha arbutin 2% + HA",
+    "image": "../IMG/Products/serum_visage_ordinary.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "3500",
+    "new price": "3300"
+  },
+  {
+    "id": "47",
+    "brand": "L'Oréal",
+    "title": "Shampoing L'Oréal professionnel serie expert",
+    "image": "../IMG/Products/shampoo_loreal.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "2400",
+    "new price": "2300"
+  },
+  {
+    "id": "48",
+    "brand": "Signal",
+    "title": "Dentifrice Signal cavity fighter",
+    "image": "../IMG/Products/signal_dentifrice.jpg",
+    "category": "tous soin_personnel soins_bucco-dentaire",
+    "old price": "350",
+    "new price": "350"
+  },
+  {
+    "id": "49",
+    "brand": "Casmara",
+    "title": "Body moisturizing Spray",
+    "image": "../IMG/Products/spray_body_casmara.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "950",
+    "new price": "800"
+  },
+  {
+    "id": "50",
+    "brand": "Sans Marque",
+    "title": "Ecran totale invisible",
+    "image": "../IMG/Products/sunscreen_sm.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1800",
+    "new price": "1800"
+  },
+  {
+    "id": "51",
+    "brand": "Crentila",
+    "title": "Tondeuse Crentila + 4 mèches",
+    "image": "../IMG/Products/tondeuse_crentila.jpg",
+    "category": "tous soins_des_cheveux",
+    "old price": "4500",
+    "new price": "4300"
+  },
+  {
+    "id": "52",
+    "brand": "Plom",
+    "title": "Vitamine C Plom Olow Boost",
+    "image": "../IMG/Products/vit_c_plom.jpg",
+    "category": "tous soins_de_la_peau",
+    "old price": "1000",
+    "new price": "800"
+  }
+]
