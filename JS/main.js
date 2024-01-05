@@ -74,6 +74,11 @@ const brandsContainer = document.querySelector(".brands-container");
 const offersContainer = document.querySelectorAll("[data-category]");
 let productsList;
 
+async function productsItems() {
+  let products = await fetch("../JSON/products.json");
+  productsList = await products.json();
+}
+
 async function categoriesOffers() {
   await productsItems();
   offersContainer.forEach(function (cont) {
@@ -159,11 +164,6 @@ async function dataBrands() {
 }
 dataBrands();
 
-async function productsItems() {
-  let products = await fetch("../JS/products.json");
-  productsList = await products.json();
-}
-
 function favoriteProduct(ele) {
   ele.innerHTML ==
   '<svg class="svg-inline--fa fa-heart" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path></svg><!-- <i class="fa-regular fa-heart"></i> Font Awesome fontawesome.com -->'
@@ -182,8 +182,6 @@ function retDefault(ele) {
 const cartIcon = document.querySelector(".main-header .cart span");
 let cartContent = document.querySelector(".panier");
 let indexesOfCartItems = [];
-
-
 
 function cartAdding(ele, id) {
   ele.parentElement.onclick = function (e) {
@@ -207,90 +205,93 @@ function cartAdding(ele, id) {
   cartIcon.innerHTML <= 0
     ? cartIcon.classList.add("d-none")
     : cartIcon.classList.remove("d-none");
-    async function dealWithCartItems() {
-      await productsItems();
-      let exp = [];
-      productsList.map((prod) => (prod["id"] == id ? exp.push(prod) : null));
-    
-      if (indexesOfCartItems.length == 0) {
-        cartContent.innerHTML = `<div class="section container text-center pt-4 pb-4">
-          <div class="no-product mb-4"><img src="IMG/panier_vide.png" alt="" /></div>
-          <h3>Votre panier est vide!</h3>
-          <p>Parcourez nos catégories et découvrez nos meilleures offres!</p>
-          <a href="index.html" class="btn">Commencez vos achats</a>
-          </div>`;
-      } else {
-        let contain = document.createElement("div");
-        contain.classList.add(
-          "container",
-          "d-flex",
-          "gap-2",
-          "justify-content-between",
-          "align-items-baseline",
-          "p-0"
-        );
-        let sec = document.createElement("div");
-        sec.classList.add("section", "flex-grow-1");
-        let title = document.createElement("h4");
-        title.classList.add("m-0", "p-2", "border-bottom");
-        title.innerHTML = `Panier (${exp.length})`;
-        let prods = document.createElement("div");
-        prods.classList.add("products");
-    
-        for (let i = 0; i < exp.length; i++) {
-          let prod = document.createElement("div");
-          prod.classList.add(
-            "product",
-            "d-flex",
-            "justify-content-between",
-            "pt-2",
-            "pb-2",
-            "border-bottom"
-          );
-          prod.innerHTML = `
-              <div class="d-flex ps-2">
-                <img src="${exp[i]["image"]}" alt="Product-image">
-                <h6 class="p-2">${exp[i]["title"]}</h6>
-              </div>
-              <div class="info p-2 text-end d-flex flex-column">
-                <span class="n-price fw-bold fs-5 mb-1">${
-                  exp[i]["new price"]
-                } DA</span>
-                <div class="descount flex-grow-1 d-flex align-items-baseline gap-3">
-                  <span class="o-price fw-bold text-secondary text-decoration-line-through">${
-                    exp[i]["old price"]
-                  } Da</span>
-                  ${
-                    100 -
-                      Math.trunc(
-                        (exp[i]["new price"] * 100) / exp[i]["old price"]
-                      ) <=
-                    0
-                      ? ""
-                      : `<span class="remise-percent">-${
-                          100 -
-                          Math.trunc(
-                            (exp[i]["new price"] * 100) / exp[i]["old price"]
-                          )
-                        }%</span>`
-                  }
-                </div>
-                <div class="quantity d-flex align-items-center">
-                  <button class="btn fw-bold"><i class="fa-solid fa-minus"></i></button>
-                  <span class="ps-3 pe-3 fs-5 fw-bold">1</span>
-                  <button class="btn"><i class="fa-solid fa-plus"></i></button>
-                </div>
-              </div>`;
-          prods.appendChild(prod);
-        }
-        sec.appendChild(title);
-        sec.appendChild(prods);
-        contain.appendChild(sec);
-        cartContent.appendChild(contain);
-      }
-    }
+
   dealWithCartItems();
 }
+
+async function dealWithCartItems() {
+  await productsItems();
+  let exp = [];
+  productsList.map((prod) => (prod["id"] == id ? exp.push(prod) : null));
+
+  if (indexesOfCartItems.length == 0) {
+    cartContent.innerHTML = `<div class="section container text-center pt-4 pb-4">
+        <div class="no-product mb-4"><img src="IMG/panier_vide.png" alt="" /></div>
+        <h3>Votre panier est vide!</h3>
+        <p>Parcourez nos catégories et découvrez nos meilleures offres!</p>
+        <a href="index.html" class="btn">Commencez vos achats</a>
+        </div>`;
+  } else {
+    let contain = document.createElement("div");
+    contain.classList.add(
+      "container",
+      "d-flex",
+      "gap-2",
+      "justify-content-between",
+      "align-items-baseline",
+      "p-0"
+    );
+    let sec = document.createElement("div");
+    sec.classList.add("section", "flex-grow-1");
+    let title = document.createElement("h4");
+    title.classList.add("m-0", "p-2", "border-bottom");
+    title.innerHTML = `Panier (${exp.length})`;
+    let prods = document.createElement("div");
+    prods.classList.add("products");
+
+    for (let i = 0; i < exp.length; i++) {
+      let prod = document.createElement("div");
+      prod.classList.add(
+        "product",
+        "d-flex",
+        "justify-content-between",
+        "pt-2",
+        "pb-2",
+        "border-bottom"
+      );
+      prod.innerHTML = `
+            <div class="d-flex ps-2">
+              <img src="${exp[i]["image"]}" alt="Product-image">
+              <h6 class="p-2">${exp[i]["title"]}</h6>
+            </div>
+            <div class="info p-2 text-end d-flex flex-column">
+              <span class="n-price fw-bold fs-5 mb-1">${
+                exp[i]["new price"]
+              } DA</span>
+              <div class="descount flex-grow-1 d-flex align-items-baseline gap-3">
+                <span class="o-price fw-bold text-secondary text-decoration-line-through">${
+                  exp[i]["old price"]
+                } Da</span>
+                ${
+                  100 -
+                    Math.trunc(
+                      (exp[i]["new price"] * 100) / exp[i]["old price"]
+                    ) <=
+                  0
+                    ? ""
+                    : `<span class="remise-percent">-${
+                        100 -
+                        Math.trunc(
+                          (exp[i]["new price"] * 100) / exp[i]["old price"]
+                        )
+                      }%</span>`
+                }
+              </div>
+              <div class="quantity d-flex align-items-center">
+                <button class="btn fw-bold"><i class="fa-solid fa-minus"></i></button>
+                <span class="ps-3 pe-3 fs-5 fw-bold">1</span>
+                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>`;
+      prods.appendChild(prod);
+    }
+    sec.appendChild(title);
+    sec.appendChild(prods);
+    contain.appendChild(sec);
+    cartContent.appendChild(contain);
+  }
+}
+
 /*
 <div class="section total-price" style="min-width: 280px;">
   <h5 class="m-0 p-2 border-bottom">Résumé du panier</h5>
